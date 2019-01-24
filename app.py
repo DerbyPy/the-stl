@@ -93,9 +93,6 @@ if __name__ == "__main__":
     fetch_results(pub_urls, results, excs)
     game_publishers = process_publisher_results(results)
 
-    pprint(game_publishers)
-    pprint(games)
-
     for publisher in game_publishers:
         for game, pub in publisher.items():
             if len(pub) == 1:
